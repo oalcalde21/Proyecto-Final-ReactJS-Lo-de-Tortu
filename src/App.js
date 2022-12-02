@@ -17,11 +17,12 @@ import Cart from './components/Cart/Cart';
 //Si no se importa automaticamente se puede llamar con la estructura import Componente from './ubicacion'
 
 function App() {
+
   return (
     <>
     <CartProvider>
       <Navbar />
-      <Welcome name="Oscar"/>
+      <Welcome/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categoria/:categoriaID" element={<ItemListContainer />} />

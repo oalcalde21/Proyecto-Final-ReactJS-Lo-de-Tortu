@@ -5,4 +5,14 @@
 
 h2{
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }

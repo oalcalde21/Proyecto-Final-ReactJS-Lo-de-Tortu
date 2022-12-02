@@ -4,6 +4,8 @@ import {ItemDetailContainer} from '../ItemDetailContainer/ItemDetailContainer';
 import {Link,  useNavigate} from 'react-router-dom';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
 import ItemCount from '../ItemCount/ItemCount';
+import 'bootstrap/dist/css/bootstrap.css';
+
 const Item = ( {name, category, price, img, stock, id}) => {
     const navigate = useNavigate();
 
@@ -12,13 +14,15 @@ const Item = ( {name, category, price, img, stock, id}) => {
     }
     return (
         <>
-        <div>
-            <div onClick={handleDetail} >
-                <h4>{name}</h4>
-                <p>{category}</p>    
-                <p>{price} $</p> 
-                <img src={img} alt={name} className='imagenes'></img>
-                <p>Stock: {stock}</p> 
+        <div className="card" style={{ "width" : "15rem"}}>
+            <div className="textOrder" onClick={handleDetail} >
+                <img src={img} alt={name} className="imagenes1"></img>
+                <div className="card-body">
+                    <h4 className="card-title">{name}</h4>
+                    <p className="card-text">{category}</p>    
+                    <p className="card-text">{price} $</p> 
+                    <p className="card-text">Stock: {stock}</p> 
+                </div>
             </div>
         </div>
         </>

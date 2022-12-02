@@ -31,7 +31,7 @@ export const CartProvider = ({defaultValue = [], children}) => {
                     }
                 ]
                 )
-               
+            
             }
     
         }

@@ -5,6 +5,8 @@ import {CartContext} from '../CardContext/CardContext'
 import {useContext} from 'react'
 import ItemCount from '../ItemCount/ItemCount';
 import Swal from 'sweetalert2'
+import 'bootstrap/dist/css/bootstrap.css';
+import './ItemDetail.css';
 
 
 const ItemDetail = ( {name, category, price, img, stock, id, description} ) => {
@@ -24,15 +26,27 @@ const ItemDetail = ( {name, category, price, img, stock, id, description} ) => {
        }
 
     return (
-        <div className=''>
-            <h4>Nombre: {name}</h4>
-            <p>Categoria: {category}</p>    
-            <p>Precio: {price} $</p> 
-            <img src={img} alt={name} className='imagenes'></img>
-            <p>Stock: {stock}</p> 
-            <p>{description}</p> 
-            <ItemCount stock={stock} onAdd={onAdd}/>
+        <>
+        <div className="">
+            <div className='orderCart3'>
+                <div className='orderCart2'>
+                    <img src={img} alt={name} className="imagenes"></img>
+                    <div>
+                        <div className="orderCart1">
+                            <h4 className="title">{name}</h4>
+                            <p className="card-text">{category}</p>    
+                            <p className="card-text">{price} $</p> 
+                            <p className="card-text">Stock: {stock}</p> 
+                            <p>{description}</p> 
+                        </div>
+                    </div>
+                    <div className='orderCart4'>
+                            <ItemCount stock={stock} onAdd={onAdd}/>
+                    </div>
+                </div>
+            </div>
         </div>
+        </>
     );
 }
 

@@ -1,17 +1,22 @@
 .card1{
     height: 350px;
     width: 150px;
-    background-color: black;
+    background-color: white;
     text-align: center;
-    color: white;
+    color:black;
     margin-top: 150px;
 }
 
-.imagenes{
-    width: 130px;
-    height: 100px;
+
+.imagenes1{
+    width: 200px;
+    height: 200px;
 }
 
 button{
     margin-top: 70px;
+}
+
+.textOrder {
+    text-align: center;
 }
