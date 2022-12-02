@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getFirestore, doc, getDoc, collection, getDocs, query, where } from 'firebase/firestore'
-import { db } from '../services/FirebaseConfig';
-import { NavLink } from 'react-router-dom'
+import { doc, getDoc } from 'firebase/firestore'
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { db } from '../services/FirebaseConfig';
 
 function ItemDetailContainer() {
     
@@ -14,21 +13,19 @@ function ItemDetailContainer() {
     useEffect(() => {
 
         setIsLoading(true)
-            const collections = collection(db,"products");
 
-            const q = detailID ? query(collections,where('id','==', Number(detailID))) : collections;
-            
-            getDocs(q)
-            .then((datos)=>{
-                console.log(datos)
-                setData(datos.docs.map((doc)=>({id:doc.id,...doc.data()})));
+        const  miproducto = doc(db,'products',detailID);
+        getDoc(miproducto)
+        .then((prod)=>{
+            setData({id:prod.id, ...prod.data()});
 
-                }).finally(()=>{
-                setIsLoading(false)
-                })
+        })
+        .catch(console.log())
+        .finally(() => {
+            setIsLoading(false)
+        })
+     }, [])
 
-    }, [detailID])
-    console.log(data)
 
 return (
     <>
@@ -39,7 +36,7 @@ return (
             <span >Cargando...</span>
         </div>
         :
-        <ItemDetail data={data}/>
+        <ItemDetail {...data}/>
     }
     
     </>

@@ -1,6 +1,6 @@
 .card{
-    height: 350px;
-    width: 150px;
+    height: auto;
+    width: auto;
     background-color: black;
     text-align: center;
     color: white;

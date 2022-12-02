@@ -20,7 +20,6 @@ const Item = ( {name, category, price, img, stock, id}) => {
                 <img src={img} alt={name} className='imagenes'></img>
                 <p>Stock: {stock}</p> 
             </div>
-            <ItemCount stock={stock}/>
         </div>
         </>
         

@@ -29,6 +29,7 @@ function ItemListContainer() {
 
 
     }, [categoriaID])  
+    console.log(data)
 
     return isLoading ? (
         <h1>Cargando...</h1>)
@@ -43,7 +44,7 @@ function ItemListContainer() {
             <NavLink activeClassName='active' to="/categoria/Anzuelo" className='textNavLinkNavLink'>Anzuelo</NavLink>
         </div>
         
-        <ItemList data={data}></ItemList>
+        <ItemList data={data} />
         </>
     );
 }
