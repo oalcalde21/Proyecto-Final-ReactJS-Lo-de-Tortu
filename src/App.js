@@ -12,6 +12,7 @@ import { NavLink } from 'react-router-dom'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 import { CartProvider } from './components/CardContext/CardContext';
+import Cart from './components/Cart/Cart';
 
 //Si no se importa automaticamente se puede llamar con la estructura import Componente from './ubicacion'
 
@@ -27,7 +28,7 @@ function App() {
           <Route path="/tienda" element={<ItemListContainer />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/detail/:detailID" element={<ItemDetailContainer />} />
-          <Route path="/details" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
     </CartProvider>
 

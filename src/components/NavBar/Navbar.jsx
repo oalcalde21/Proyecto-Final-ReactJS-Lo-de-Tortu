@@ -10,9 +10,9 @@ function Navbar() {
     return (
         <header className='navbar'>
             <img src={Logo} alt="Logo" />
-            <NavLink activeClassName='active' to='/' className='links'>Home</NavLink> 
-            <NavLink activeClassName='active' to='/Nosotros' className='links'>Nosotros</NavLink>  
-            <NavLink activeClassName='active' to='/Tienda' className='links'>Tienda</NavLink> 
+            <NavLink activeclassname='active' to='/' className='links'>Home</NavLink> 
+            <NavLink activeclassname='active' to='/Nosotros' className='links'>Nosotros</NavLink>  
+            <NavLink activeclassname='active' to='/Tienda' className='links'>Tienda</NavLink> 
             <CartWidget />
         </header>
     );

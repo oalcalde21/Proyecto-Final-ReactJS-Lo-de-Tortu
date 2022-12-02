@@ -38,10 +38,10 @@ function ItemListContainer() {
         <>
         <p className='titCategory'>Categorias:</p>
         <div className='textNavLinkDiv'>
-            <NavLink activeClassName='active' to="/categoria/Cana" className='textNavLinkNavLink'>Cañas</NavLink>
-            <NavLink activeClassName='active' to="/categoria/Reel" className='textNavLinkNavLink'>Reeles</NavLink>
-            <NavLink activeClassName='active' to="/categoria/Tanza" className='textNavLinkNavLink'>Tanzas</NavLink>
-            <NavLink activeClassName='active' to="/categoria/Anzuelo" className='textNavLinkNavLink'>Anzuelo</NavLink>
+            <NavLink activeclassname='active' to="/categoria/Cana" className='textNavLinkNavLink'>Cañas</NavLink>
+            <NavLink activeclassname='active' to="/categoria/Reel" className='textNavLinkNavLink'>Reeles</NavLink>
+            <NavLink activeclassName='active' to="/categoria/Tanza" className='textNavLinkNavLink'>Tanzas</NavLink>
+            <NavLink activeclassname='active' to="/categoria/Anzuelo" className='textNavLinkNavLink'>Anzuelo</NavLink>
         </div>
         
         <ItemList data={data} />

@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { CartContext } from '../CardContext/CardContext'
 import { Link } from 'react-router-dom'
-// import Form from './Form'
+import Form from '../Form/Form'
 import { collection, addDoc,getFirestore } from 'firebase/firestore'
 import Swal from "sweetalert2";
+import './Cart.css'
+
 
 
 
@@ -16,8 +18,6 @@ export default function Cart() {
     const [confirmation, setConfirmation] = useState(false)
 
     const hoy = new Date()
-
-
 
     const handleFinalize = () =>{
     setShowForm(true)
@@ -59,7 +59,7 @@ export default function Cart() {
                     <div className="card cardStyle">
                         <img src={element.item.img}alt={element.item.name} className='card card-image' />
                         <div className="card-body">
-                            <h5 className="card-title">Funda: {element.item.category}</h5><br/>
+                            <h5 className="card-title">Articulo: {element.item.category}</h5><br/>
                             <h5 className="card-title">Articulo: {element.item.name}</h5><br/>
                             <p className='precio'>Precio: $ {element.item.price}</p>
                             <p className='precio'>Cantidad elegida: {element.quantity}</p>
@@ -71,10 +71,10 @@ export default function Cart() {
             ))}
 
 
-                {/* <h4>Cantidad de todos los items: {getQuantity()}</h4>
+                <h4>Cantidad de todos los items: {getQuantity()}</h4>
                 <h4>PRECIO TOTAL: $ {getTotal()}</h4>
                 <button onClick={handleFinalize}>Comprar</button>
-                {showForm ? <Form createOrder={createOrder}/> : null} */}
+                {showForm ? <Form createOrder={createOrder}/> : null}
             </div>
             )
         } else if(orderId && confirmation) {
