@@ -1,0 +1,17 @@
+.card1{
+    height: 350px;
+    width: 150px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.imagenes{
+    width: 130px;
+    height: 100px;
+}
+
+button{
+    margin-top: 70px;
+}
