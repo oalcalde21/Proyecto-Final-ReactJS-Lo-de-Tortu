@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { doc, getDoc } from 'firebase/firestore'
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { db } from '../services/FirebaseConfig';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function ItemDetailContainer() {
     

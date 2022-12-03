@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './ItemList.css';
 import Item from '../Item/Item';
+import 'bootstrap/dist/css/bootstrap.css';
 
 //Se importa la hoja de estilos al iniciar, se tiene que crear una hoja de estilos por cada archivo JS
 

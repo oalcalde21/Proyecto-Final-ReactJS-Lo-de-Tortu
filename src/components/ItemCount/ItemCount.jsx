@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './ItemCount.css'
 import Swal from "sweetalert2";
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 function ItemCount({ stock, onAdd }) {

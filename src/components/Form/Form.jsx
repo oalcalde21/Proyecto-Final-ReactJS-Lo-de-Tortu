@@ -5,6 +5,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import '../Form/Form.css'
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Formulario = ({ createOrder }) => {
     
@@ -57,7 +58,9 @@ const Formulario = ({ createOrder }) => {
                     <input placeholder="Confirma Email" name="emailConfirmation" value={form.emailConfirmation} onChange={getContactData} type="email"/>
                 </div>
             </form>
+            <p></p>
             <button type="submit" className="finalize"  disabled={disabled} onClick={finalizePurchase}>Finalizar</button>
+            <p></p>
         </div>
     )
 }

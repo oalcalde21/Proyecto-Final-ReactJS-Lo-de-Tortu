@@ -4,6 +4,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { CartContext } from '../CardContext/CardContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 
 //Se importa la hoja de estilos al iniciar, se tiene que crear una hoja de estilos por cada archivo JS
 

@@ -5,6 +5,7 @@ import { useParams, useLocation } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { getFirestore, doc, getDoc, collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../services/FirebaseConfig';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function ItemListContainer() {
 

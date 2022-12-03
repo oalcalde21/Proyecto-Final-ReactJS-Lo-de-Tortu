@@ -1,6 +1,7 @@
 import React from 'react'
 import {createContext, useState} from 'react'
 import Cart from '../Cart/Cart'
+import 'bootstrap/dist/css/bootstrap.css';
 
 export const CartContext = createContext({})
 
