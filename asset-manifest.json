@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/lo-del-tortu-main/static/css/main.98de23cb.css",
+    "main.js": "/lo-del-tortu-main/static/js/main.ee65fbcd.js",
+    "static/js/787.28cb0dcd.chunk.js": "/lo-del-tortu-main/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.png": "/lo-del-tortu-main/static/media/logo.0681fdd01b26ffa4f7db.png",
+    "static/media/logo.svg": "/lo-del-tortu-main/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/lo-del-tortu-main/index.html",
+    "main.98de23cb.css.map": "/lo-del-tortu-main/static/css/main.98de23cb.css.map",
+    "main.ee65fbcd.js.map": "/lo-del-tortu-main/static/js/main.ee65fbcd.js.map",
+    "787.28cb0dcd.chunk.js.map": "/lo-del-tortu-main/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98de23cb.css",
+    "static/js/main.ee65fbcd.js"
+  ]
+}

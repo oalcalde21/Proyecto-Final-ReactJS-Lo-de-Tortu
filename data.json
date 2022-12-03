@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "Caña Shimano",
+        "stock": 10,
+        "precio": 10000,
+        "descuento": 0.8,
+        "categoria": "Cana",
+        "id": 1,
+        "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/192/523/products/3-111-fea3bf50bb20c89d9216547133084044-640-0.jpg"
+    },
+    {
+        "nombre": "Reel Okuma",
+        "stock": 20,
+        "precio": 2000,
+        "descuento": 0.9,
+        "categoria": "Reel",
+        "id": 2,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_624206-MLU43880241718_102020-F.webp"
+    },
+    {
+        "nombre": "Tanza MaxForce",
+        "stock": 5,
+        "precio": 20000,
+        "descuento": 0.95,
+        "categoria": "Tanza",
+        "id": 3,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_874502-MLU49821626374_052022-F.webp"
+    },
+    {
+        "nombre": "Anzuelo Mustad",
+        "stock": 10,
+        "precio": 10000,
+        "descuento": 0.8,
+        "categoria": "Anzuelo",
+        "id": 4,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_790242-MLU43383835309_092020-F.webp"
+    }
+]
